@@ -30,3 +30,22 @@ def union(*ar):
 print(union("ham","EGG"))
 print(union("ham","EGG","SPAM"))
 
+#정의되지않은 인자 처리
+def userURLBuilder(server, port, **user):
+    strURL = "http://" + server + ":" + port + "/?"
+    for key in user.keys():
+        strURL += key + "=" + user[key] + "&"
+    return strURL
+
+#호출
+print(userURLBuilder("credu.com", "80", id="kim", passwd="1234"))
+print(userURLBuilder("credu.com", "80", id="kim", passwd="1234",
+    name="mike"))
+
+#람다함수(이름이 없다)
+g = lambda x,y:x*y
+print(g(3,4))
+print(g(5,6))
+print((lambda x:x*x)(3))
+print(globals())
+
