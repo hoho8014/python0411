@@ -1,6 +1,7 @@
 # function1.py
 #함수를 정의
 def setValue(i):
+    #함수 내부의 지역변수에 초기화
         x = i
         print("내부에서 출력:", x)
 
