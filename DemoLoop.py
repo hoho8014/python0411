@@ -43,3 +43,5 @@ for i in lst:
 #수열함수
 result = list(range(10))
 print(result)
+years = list(range(2000,2023))
+print(years)
