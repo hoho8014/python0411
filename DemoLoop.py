@@ -1,5 +1,8 @@
 # DemoLoop.py
 
+from unittest import result
+
+
 Value = 5
 while Value > 0:
     print(Value)
@@ -36,3 +39,6 @@ for i in lst:
     if i % 2 == 0:
         continue
     print("Item:{0}".format(i))
+
+#수열함수
+result
