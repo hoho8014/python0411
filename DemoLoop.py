@@ -41,4 +41,5 @@ for i in lst:
     print("Item:{0}".format(i))
 
 #수열함수
-result
+result = list(range(10))
+print(result)
