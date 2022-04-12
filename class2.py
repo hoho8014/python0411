@@ -5,7 +5,9 @@ class person:
     num_person = 0
     #초기화 메서드
     def __init__(self):
+        #인스턴스 멤버변수(복사본에 해당)
         self.name = "default name"
+        person.num_person += 1
     #인스턴스 메서드
     def print(self):
         print("my nams is {0}".format(self.name))
@@ -13,6 +15,6 @@ class person:
 #인스턴스 생성
 p1 = person()
 p2 = person()
-p2.name = "전우치"
-p1.print()
-p2.print()
+p3 = person()
+print("인스턴스 개수:", person.num_person)
+
