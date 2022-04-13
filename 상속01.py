@@ -33,3 +33,4 @@ s = Student("이순신", "010-111-1234", "컴공", "991122")
 p.printInfo()
 s.printInfo()
 
+  

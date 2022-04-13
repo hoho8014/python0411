@@ -1,5 +1,4 @@
 # BankAccount.py
-
 #은행의 계정을 표현한 클래스 
 class BankAccount:
     #내가 원하는 값을 받아서 바로 인스턴스를 생성
@@ -15,7 +14,7 @@ class BankAccount:
     def withdraw(self, amount):
         #출금
         self.__balance -= amount
-    #선택한 영역을 주석: ctrl + / (cmd + /)
+    #선택한 영역을 주석: ctrl + / (cmd + / )
     def __str__(self):
         #인스턴스의 문자열을 출력(ToString())
         return "{0}, {1}, {2}".format(self.__id, 
@@ -28,7 +27,7 @@ account1.deposit(5000)
 account1.withdraw(3000)
 print(account1)
 #클래스 외부(인스턴스)접근
-#확장된 이름: _클래스명__변수명(테스트를 위한 백도어)
-print(account1._BankAccont__balance)
+#확장된이름: _클래스명__변수명(테스트를 위한 백도어)
+print(account1._BankAccount__balance)
 
 
