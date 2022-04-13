@@ -5,6 +5,7 @@ class Bird:
 class Student(Person):
     pass
 
+#인스턴스 생성
 p, s = Person(), Student()
 print("p is instance of Person: ", isinstance(p, Person))
 print("s is instance of Person: ", isinstance(s, Person))
